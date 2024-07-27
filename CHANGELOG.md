@@ -82,3 +82,20 @@ new TextStyleBuilder()
 ### 1.5.1
 - New : #379 Should disallow drawing on left or right of the image using `photoEditor.setClipSourceImage(true)`
 - New/Break : #383 Get a callback when the image source is touched `onTouchSourceImage(MotionEvent event);`
+
+### 2.0.0
+- New : Migrated the app and library to Kotlin
+
+### 3.0.0
+- New : Arrow shape
+- Change : (Breaking Change) `minSdkVersion` changed to `21`
+- Change : (Breaking Change) Shape names are no longer UPPERCASE
+- New : Suspending functions for saving images: `saveAsFile(String[, SaveSettings])` and `saveAsBitmap([SaveSettings])`
+- Fixed : #374 `IndexOutOfBoundsException` when saving bitmap
+
+### 3.0.1
+- New : #518 Fix Builder methods' return type in Java
+- Fixed : #522 Leak Graphics memory when changing filter
+
+### 3.0.2
+- Fixed : #460 Wrong return value of undo() method
